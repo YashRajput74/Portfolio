@@ -1,6 +1,6 @@
 function animateText(){
     const textElement=document.querySelector(".animatedText");
-    const words=["Developer.","Web Developer."];
+    const words=["Developer.","Web Developer.","UI/UX Developer.","Javascript Developer.","HTML/CSS Developer."];
     let wordIndex=0;
     let charIndex=0;
     let isDeleting=false;
@@ -31,5 +31,8 @@ function animateText(){
 (function bindEvents(){
     document.addEventListener("DOMContentLoaded",()=>{
         setTimeout(animateText,1000);
+    })
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+        document.querySelector("nav").classList.toggle("show");
     })
 })();
