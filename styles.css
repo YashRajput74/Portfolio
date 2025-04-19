@@ -7,8 +7,9 @@
 :root{
     --primary-font-color: #9b59b6;
     --secondary-font-color: black;
-
-    --primary-background-color: linear-gradient(to right, #9b59b6, #d7bde2);
+    --color-font-gray: rgb(153,153,153);
+    --primary-background-gradient: linear-gradient(to right, #9b59b6, #d7bde2);
+    --secondary-background-gradient: linear-gradient(to right, #9b59b6, #6f348c);
     --secondary-background-color:#f5f5f0;
 
 }
@@ -20,7 +21,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--primary-background-color);
+    background: var(--primary-background-gradient);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 }
 header>h3{
@@ -76,7 +77,6 @@ nav ul li a:hover::after {
     height: 80vh;
     margin-bottom: 10vh;
     /* background-color: var(--secondary-background-color); */
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,9 +111,55 @@ nav ul li a:hover::after {
         opacity: 0;
     }
 }
-
-
-
+.aboutMe{
+    width: 100%;
+    height: 90vh;
+    border: 1px solid;
+    padding: 10vh;
+    display: flex;
+}
+.aboutMe>div:nth-child(1){
+    width: 60%;
+}
+.aboutMe>div:nth-child(2){
+    width: 40%;
+    height: auto;
+    border: 1px solid;
+}
+.aboutMe>div>h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.aboutMe>div>p{
+    color: var(--color-font-gray);
+    font-size: 2rem;
+    margin: 3vh 0vh;
+}
+.aboutMe>div>div{
+    display: flex;
+}
+.headingsAboutMe{
+    font-size: 1.5rem;
+    padding-right: 4vh;
+    margin-bottom: 4vh;
+}
+.headingsAboutMe>p{
+    margin: 1.5vh;
+}
+.headingsAboutMe~div>p{
+    color: var(--color-font-gray);
+    font-size: 1.5rem;
+    margin: 1.5vh;
+}
+.resume{
+    font-size: 1.2rem;
+    padding: 2vh;
+    border: none;
+    border-radius: 4vh;
+    outline: none;
+    color: white;
+    background: var(--secondary-background-gradient);
+}
 @media (max-width:768px){
     header>h3{
         padding-left: 5vh;
