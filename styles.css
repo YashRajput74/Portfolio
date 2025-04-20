@@ -30,7 +30,7 @@ header>h3{
 }
 header>h3>a{
     text-decoration: none;
-    color: black;
+    color: var(--secondary-font-color);
     font-size: 1.7rem;
     font-weight: 400;
 }
@@ -43,7 +43,7 @@ header>h3>a{
 .hamburger>span{
     width: 25px;
     height: 3px;
-    background-color: #000;
+    background-color: var(--secondary-font-color);
     border-radius: 2px;
 }
 nav{
@@ -56,7 +56,7 @@ nav>ul{
 }
 nav>ul>li>a{
     text-decoration: none;
-    color: black;
+    color: var(--secondary-font-color);
     position: relative;
 }
 nav ul li a::after {
@@ -114,7 +114,6 @@ nav ul li a:hover::after {
 .aboutMe{
     width: 100%;
     height: 90vh;
-    border: 1px solid;
     padding: 10vh;
     display: flex;
 }
@@ -160,6 +159,46 @@ nav ul li a:hover::after {
     color: white;
     background: var(--secondary-background-gradient);
 }
+.resume:hover{
+    color: var(--secondary-font-color);
+}
+.resumeDiv{
+    width: 100%;
+    height: 80vh;
+    border: 1px solid;
+}
+.resumeTabs{
+    display: flex;
+    justify-content: center;
+}
+.tab{
+    background-color: #f0f0f0;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.tab:hover,
+.tab.active{
+    background-color: var(--primary-font-color);
+    color: white;
+}
+.resumeContent{
+    position: relative;
+}
+.tabContent {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.tabContent.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
 @media (max-width:768px){
     header>h3{
         padding-left: 5vh;
@@ -196,5 +235,13 @@ nav ul li a:hover::after {
         max-height: 300px;
         opacity: 1;
         transform: translateY(0);
+    }
+    .aboutMe{
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutMe>div:nth-child(1){
+        width: 100%;
+        margin-bottom: 5vh;
     }
 }
