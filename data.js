@@ -13,13 +13,13 @@ const data={
             "description" : "Scored aggregate 68.07% in Electronics and Communication Engineering"
         },
         "inter" :{
-            "timeline" : "2020 - 2024",
+            "timeline" : "2019 - 2020",
             "course" : "Intermediate",
             "instituition" : "Children's Academy, Ghaziabad",
             "description" : "Scored aggregate 91.6% in Intermediate with PCM"
         },
         "highschool":{
-            "timeline" : "2020 - 2024",
+            "timeline" : "2017 - 2018",
             "course" : "High School",
             "instituition" : "Children's Academy, Ghaziabad",
             "description" : "Scored aggregate 89% in High School"
