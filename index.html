@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +8,202 @@
     <link rel="icon" type="image/webp" href="./resources/Yash_Logo.webp"><!-- favicon -->
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <a href="#">Portfolio</a>
-            <span>
-                <a href="#" class="resumeDownload">Download Resume</a>
-                <a href="#" class="contactButton">Contact Me</a>
-            </span>
-        </nav>
-    </header>
-    <section id="hero">
-        <div class="profilePicture">
-            <div>
-                <img src="./resources/Yash_Logo.webp" alt="">
-            </div>
+        <div class="portfolioLogo">
+            <img src="./resources/Yash_Logo_White_png_cleanup-removebg-preview.png" alt="">
+            <span>Portfolio</span>
         </div>
         <div>
-            <div class="aboutMe">
-                <div class="name">Yash Rajput</div>
-                <div><a href="#">LinkedIn</a></div>
-                <div><a href="mailto:yashrajput7455@gmail.com">Email</a></div>
+
+        </div>
+        <div>
+            <button class="resumeDownload">
+                Download Resume
+            </button>
+        </div>
+    </header>
+    <section id="leftSidebar">
+        <div class="pfpBox">
+            <div class="pfp">
+                <div>
+                    <img src="./resources/Yash_Logo.webp" alt="">
+                </div>
             </div>
-            <div class="aboutMe">
-                "Code is my craft, consistency is my superpower."
+            <div class="blackWhite">
+                Yash Rajput
+                <span>Web Developer</span>
             </div>
-            <div class="githubInfo">
-                <div class="streak"><span>23 </span>Days streak on github</div>
-                <div class="numProjects"><span>7 </span>Projects completed</div>
+            <div>
+                <div class="blackWhite">
+                    7
+                    <span>Projects</span>
+                </div>
+                <div class="blackWhite">
+                    31
+                    <span>Days Streak</span>
+                </div>
             </div>
-            <div class="contactNo">
-                yashrajput7455@gmail.com
-                <div><img src="#" alt="">YashRajput74</div>
-            </div>
+        </div>
+        <div class="contentSel">
+            <a href="#" class="active">Projects</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
         </div>
     </section>
     <main>
-        <div class="projectOptions">
-            <div class="active">Projects</div>
-            <div>Project Demo</div>
-            <div>Star Projects</div>
+        <div class="status">
+            <div>
+                <h2>Skills</h2>
+            </div>
+            <div>
+                <div class="skillItem">
+                    <div class="statusCircle">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu8IaYl3q9jl6N1QWTNYIAHH9nCX64xrLTuQ&s" alt="HTML">
+                        </div>
+                    </div>
+                    <p class="skillName">HTML</p>
+                </div>
+                <div class="skillItem">
+                    <div class="statusCircle">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPixDGHHN5VI-ZGO_Uq-_m7MULGn9aMkfFHCIYK2ohxlBXnjpVHqHUs9YimwdNmgkem4&usqp=CAU" alt="CSS">
+                        </div>
+                    </div>
+                    <p class="skillName">CSS</p>
+                </div>
+                
+                <div class="skillItem">
+                    <div class="statusCircle">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMvId3MgmE1uQFfCI5R0qxDfix_kb5b1ttpg&s" alt="JS">
+                        </div>
+                    </div>
+                    <p class="skillName">JavaScript</p>
+                </div>
+                
+                <div class="skillItem">
+                    <div class="statusCircle">
+                        <div>
+                            <img src="https://zerovaega.com/site/assets/files/1425/react-icon_svg.png" alt="React">
+                        </div>
+                    </div>
+                    <p class="skillName">React</p>
+                </div>
+                
+                <div class="skillItem">
+                    <div class="statusCircle">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBwhMOxO7xHV9OqhDZ585TTapui1-kcj3dA&s" alt="Github">
+                        </div>
+                    </div>
+                    <p class="skillName">Github</p>
+                </div>
+                
+                <div class="skillItem">
+                    <div class="statusCircle">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQW0cN1w6qDSzbivb_yzKBcA-e7EXLyCfIQ&s" alt="Vite">
+                        </div>
+                    </div>
+                    <p class="skillName">Vite</p>
+                </div>
+                
+                <div class="skillItem">
+                    <div class="statusCircle">
+                        <div>
+                            <img src="https://altcampus.com/images/icons/course/git.svg" alt="Git">
+                        </div>
+                    </div>
+                    <p class="skillName">Git</p>
+                </div>
+                
+            </div>
         </div>
-        <div class="allProjects">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="projectPosts">
+            <div>
+                <h2>Projects</h2>
+                <span>
+                    <button class="latestProjects">Latest</button>
+                    <button class="popularProjects">Popular</button>
+                </span>
+            </div>
+            <div>
+                <div class="projectFeed">
+                    <h4>Homestay</h4>
+                    <div><img src="./resources/homestay.png" alt=""></div>
+                    <div>
+                        <div class="projectLinks">
+                            <a>Github Link</a>
+                            <a>Deployed Link</a>
+                        </div>
+                        <div class="projectDes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit libero
+                            magni veniam architecto autem aperiam ea ipsa. Inventore illo delectus error pariatur
+                            numquam quae labore asperiores excepturi rerum, cum suscipit accusantium mollitia reiciendis
+                            nisi eum libero, fuga, incidunt deserunt! Eum cum nostrum tenetur praesentium quaerat beatae
+                            rerum consequuntur numquam laudantium?</div>
+                    </div>
+                </div>
+                <div class="projectFeed">
+                    <h4>Homestay</h4>
+                    <div><img src="./resources/homestay.png" alt=""></div>
+                    <div>
+                        <div class="projectLinks">
+                            <a>Github Link</a>
+                            <a>Deployed Link</a>
+                        </div>
+                        <div class="projectDes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit libero
+                            magni veniam architecto autem aperiam ea ipsa. Inventore illo delectus error pariatur
+                            numquam quae labore asperiores excepturi rerum, cum suscipit accusantium mollitia reiciendis
+                            nisi eum libero, fuga, incidunt deserunt! Eum cum nostrum tenetur praesentium quaerat beatae
+                            rerum consequuntur numquam laudantium?</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <section id="rightSidebar">
+        <!-- <div class="favProjects">
+            <h4>Personal Favorite Projects</h4>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div class="quoteBox">
+            <h4>About Me</h4>
+            <p>
+                Hi, I'm Yash Rajput, a passionate Web Developer with a love for crafting clean, responsive, and user-friendly websites. I enjoy solving problems, learning new technologies, and turning ideas into reality through code.
+            </p>
+            <p>
+                With hands-on experience in HTML, CSS, JavaScript, React, and Git, I’ve built several projects that reflect my dedication to both design and functionality. I'm currently focused on growing my skills and contributing to real-world applications.
+            </p>
+        </div>
+        <div class="contactMe">
+            <h4>Contact Me</h4>
+            <form action="https://formsubmit.co" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New submission from portfolio!">
+
+                <label for="name">Name</label>
+                <input type="text" name="Name" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea name="Message" id="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+    <script src="./main.js"></script>
 </body>
+
 </html>
